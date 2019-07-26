@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
         for (ResultsItem resultsItem: people){
             recyclerView = findViewById(R.id.main_RV);
             recyclerView.setHasFixedSize(true);
-            adapter = new MainRVAdapter(people);
+            adapter = new MainRVAdapter(people , this);
             adapter.setContext(this);
             recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
             recyclerView.setAdapter(adapter);

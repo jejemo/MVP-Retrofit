@@ -19,14 +19,11 @@ import java.util.List;
 
 public class MainRVAdapter extends RecyclerView.Adapter<MainRVAdapter.mainHolder> {
     private List<ResultsItem> resultsItemList;
-    Context mCtx;
+    Context mCtx ;
 
-    public MainRVAdapter(List<ResultsItem> resultsItemList) {
-        this.resultsItemList = resultsItemList;
-    }
-
-    public MainRVAdapter(Context mCtx) {
-        this.mCtx = mCtx;
+    public MainRVAdapter(List<ResultsItem> people, Context context) {
+        this.resultsItemList = people;
+        this.mCtx = context;
     }
 
     @NonNull
